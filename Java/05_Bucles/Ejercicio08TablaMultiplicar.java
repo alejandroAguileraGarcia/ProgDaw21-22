@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ejercicio8TablaMultiplicar {
+public class Ejercicio08TablaMultiplicar {
   public static void main(String[] args){
     Scanner s=new Scanner(System.in);
     

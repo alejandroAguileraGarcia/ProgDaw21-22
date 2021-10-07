@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ejercicio7CajaFuerte {
+public class Ejercicio07CajaFuerte {
   public static void main(String[] args) {
   Scanner s = new Scanner(System.in);
 
