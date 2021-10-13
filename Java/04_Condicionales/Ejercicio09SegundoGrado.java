@@ -5,26 +5,41 @@ public class Ejercicio09SegundoGrado {
   public static void main(String[] args){
     Scanner s = new Scanner(System.in);
     
-    int a, b, c;
-    double x1, x2, radical;
+    double a, b, c;
+    double x1, x2;
+    String solucion1, solucion2;
         
     System.out.println("Introduzca los coeficientes a, b y c de la expresion ax^2+bx+c=0 separados por un espacio:");
-    a= s.nextInt();
-    b= s.nextInt();
-    c= s.nextInt();
-    
-    radical=(Math.pow(b,2)-4*a*c);
+    a = s.nextDouble();
+    b = s.nextDouble();
+    c = s.nextDouble();
 
-    if (radical>=0){
-      x1=((-b+Math.sqrt(radical))/2*a);
-      x2=((-b-Math.sqrt(radical))/2*a);
-      System.out.printf("Las soluciones son %.2f y %.2f", x1, x2);
-    }else{
-      System.out.println("Coeficientes invalidos");
+    if (a == 0 ) {
+      if (b == 0) {
+        System.out.println("Esto no es una ecuación.");
+      } else {
+        x1 = -c/b;
+        System.out.println("La solución es:");
+        System.out.println("x1 = "+x1);
+      }      
+    } else {
+      double radicando;
+      radicando = b*b-4*a*c;
+      if (radicando >= 0) {
+        x1 = (-b + Math.sqrt(radicando))/(2*a);
+        x2 = (-b - Math.sqrt(radicando))/(2*a);
+        System.out.println("Las soluciones son:");
+        System.out.println("x1 = "+x1);
+        System.out.println("x2 = "+x2);
+      } else {
+        solucion1 = ("" + -b/(2*a)+ " + " +(Math.sqrt(-radicando))/(2*a)+" i");
+        solucion2 = ("" + -b/(2*a)+ " + " +(-Math.sqrt(-radicando))/(2*a)+" i");
+        System.out.println("Las soluciones son:");
+        System.out.println("x1 = " + solucion1);
+        System.out.println("x2 = " + solucion2);
+      }
+      
     }
-    
-
-    
 
     s.close();
   }
