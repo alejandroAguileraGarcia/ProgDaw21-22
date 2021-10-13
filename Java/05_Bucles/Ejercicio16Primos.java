@@ -7,7 +7,7 @@ public class Ejercicio16Primos {
     int numero = 0;
     int contadorDivisores = 1;
 
-    System.out.println("Introduce un numero: ");
+    System.out.print("Introduce un numero: ");
     numero = s.nextInt();
 
     for (int i = 1; i < numero; i++){
@@ -16,7 +16,11 @@ public class Ejercicio16Primos {
       }
     }
 
-    System.out.println(contadorDivisores);
+    if (contadorDivisores == 2){
+      System.out.println("El numero es primo");
+    }else{
+      System.out.println("El numero no es primo");
+    }
 
     s.close();
   }
