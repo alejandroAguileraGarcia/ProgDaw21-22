@@ -30,8 +30,6 @@ public class Ejercicio18NumerosEnterosEntreDos {
       System.out.println("Numeros invalidos");
     }
 
-//TODO Hacer ejercicio 19 y 20
-
     s.close();
   }
 }

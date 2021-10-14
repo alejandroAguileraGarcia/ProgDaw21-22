@@ -4,7 +4,7 @@ public class Ejercicio13Orden2 {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
 
-   /*int a;
+  /*int a;
     int b;
     int c;
 
@@ -13,7 +13,6 @@ public class Ejercicio13Orden2 {
     b = s.nextInt();
     c = s.nextInt();
 */
-    //TODO Hacerlo con metodo
 
     s.close();
   }
