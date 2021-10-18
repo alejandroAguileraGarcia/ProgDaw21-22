@@ -14,53 +14,34 @@ public class Ejercicio28PiedraPapelTijera {
     System.out.print("Turno del jugador 2 (piedra, papel o tijera): ");
     j2 = s.nextLine();
 
-
-    switch (j1) {
-      case "papel":
-        switch (j2){
-          case "papel":
-            ganador=3;
-            break;
-          case "tijera":
+    if (j1.equals(j2)){
+      ganador = 3;
+    }else{
+      switch (j1) {
+        case "papel":
+          if (j2.equals("tijera")){
             ganador=2;
-            break;
-          case "piedra":
+          }else if (j2.equals("piedra")){
             ganador=1;
-            break;
-          default:
-            break;
-        }break;
-      case "piedra":
-        switch (j2){
-          case "papel":
+          }
+          break;
+        case "piedra":
+          if (j2.equals("papel")){
             ganador=2;
-            break;
-          case "tijera":
+          }else if (j2.equals("tijera")){
             ganador=1;
-            break;
-          case "piedra":
-            ganador=3;
-            break;
-          default:
-            break;
-        }break;
-      case "tijera":
-        switch (j2){
-          case "papel":
-            ganador=1;
-            break;
-          case "tijera":
-            ganador=3;
-            break;
-          case "piedra":
+          }
+          break;
+        case "tijera":
+          if (j2.equals("piedra")){
             ganador=2;
-            break;
-          default:
-            break;
-        }break;
-      default:
-        break;
-    }
+          }else if (j2.equals("papel")){
+            ganador=1;
+          }
+          break;
+        default:
+          break;
+      }}
 
     if (ganador==0){
       System.out.println("Jugada invalida");

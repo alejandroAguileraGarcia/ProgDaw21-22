@@ -9,6 +9,7 @@ public class Ejercicio22MinutosFinde {
     int dayMinutes=1440;
     int dayMinutesUntilThree = 900 ;
     int totalMinutes=0;
+    int diaNumerico=0;
     String day ="";
 
     System.out.println("¿Que dia de la semana es?");
@@ -21,24 +22,26 @@ public class Ejercicio22MinutosFinde {
 
     switch(day){
       case "lunes":
-        totalMinutes= ((dayMinutesUntilThree-minutes-(hour*60))+dayMinutes*4);
+        diaNumerico=4;
         break;
       case "martes":
-        totalMinutes= ((dayMinutesUntilThree-minutes-(hour*60))+dayMinutes*3);
+        diaNumerico=3;
         break;
       case "miercoles":
-        totalMinutes= ((dayMinutesUntilThree-minutes-(hour*60))+dayMinutes*2);
+        diaNumerico=2;
         break;
       case "jueves":
-        totalMinutes= ((dayMinutesUntilThree-minutes-(hour*60))+dayMinutes);
+        diaNumerico=1;
         break;
       case "viernes":
-        totalMinutes= (dayMinutesUntilThree-minutes-(hour*60));
+        diaNumerico=0;
         break;
       default:
         System.out.println("Dia no valido");
         break;
     }
+
+    totalMinutes= ((dayMinutesUntilThree-minutes-(hour*60))+dayMinutes*diaNumerico);
 
     System.out.printf("Quedan %d minutos hasta el fin de semana", totalMinutes);
 

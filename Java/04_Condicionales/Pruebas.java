@@ -4,21 +4,29 @@ public class Pruebas {
   public static void main(String[] args) {   
     Scanner s = new Scanner(System.in);
 
-    int hour;
-    int minutes;
-    int dayMinutes=1440;
-    int totalMinutes;
+    String palabra ="m";
 
-    System.out.println("¿Que dia de la semana es?");
+    int numeroMayor = 100;
+    int numeroMenor = 0;
+    int numero = 100;
 
-    System.out.println("¿Que hora es en horas y minutos separados por un espacio ?");
-    hour= s.nextInt();
-    minutes= s.nextInt();
-    s.nextLine();
+    do{
+      if(palabra.equals("M")){
+        numeroMenor = numero;
+      }else if (palabra.equals("m")){
+        numeroMayor = numero;
+      }
+      
+      numero = (numeroMenor + numeroMayor)/2;
 
-    totalMinutes= (dayMinutes-minutes-(hour*60));
+      System.out.printf("¿El numero es %d (s/M/m)?: ", numero);
+      palabra = s.nextLine();
 
-    System.out.println(totalMinutes);
+      
+    }while((palabra.equals("M"))||(palabra.equals("m")));
+    
+    System.out.println(numero);
+
     s.close();
   }
 }
