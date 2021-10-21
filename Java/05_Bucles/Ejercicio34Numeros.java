@@ -54,8 +54,8 @@ public class Ejercicio34Numeros {
       reves2 /= 10;
     }
 
-    System.out.println(numeroPares);
-    System.out.println(numeroImpares);
+    System.out.println("Numero pares " + numeroPares);
+    System.out.println("Numero impares " + numeroImpares);
     
     s.close();
   }

@@ -17,11 +17,9 @@ public class Ejercicio33U {
       System.out.println(" *");
     }
 
-    System.out.print("  ");
     for (int i = 0; i < ((altura/2)+1); i++){
-      System.out.print("* ");
+      System.out.print(" *");
     }
-    System.out.print("  ");
     
     s.close();
   }
