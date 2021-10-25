@@ -6,9 +6,9 @@ public class Ejercicio13NumerosNegativosPositivos {
     
     int cantidadNegativos=0;
     int cantidadPositivos=0;
-    int numero=0;
+    int numero;
 
-    for (int i=0; i<5; i++){
+    for (int i=0; i<10; i++){
       System.out.print("Introduce un numero: ");
       numero=s.nextInt();
 

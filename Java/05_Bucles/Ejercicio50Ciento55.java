@@ -14,7 +14,7 @@ public class Ejercicio50Ciento55 {
 
     s.close();
 
-    for (int i = 0; i < altura; i++) {
+    for (int i = 1; i <= altura; i++) {
 
       System.out.print("*");
 
@@ -22,21 +22,21 @@ public class Ejercicio50Ciento55 {
         System.out.print(" ");
       }
 
-      if ((i==0)||(i==2)||(i==(altura-1))){
+      if ((i==1)||(i==3)||(i==altura)){
         System.out.print("****");
-      }else if (i==1){
+      }else if (i==2){
         System.out.print("*   ");
       }else{
         System.out.print("   *");
       }
 
       for (int j = 0; j < espacios; j++) {
-        System.out.print(".");
+        System.out.print(" ");
       }
 
-      if ((i==0)||(i==2)||(i==(altura-1))){
+      if ((i==1)||(i==3)||(i==altura)){
         System.out.println("****");
-      }else if (i==1){
+      }else if (i==2){
         System.out.println("*   ");
       }else{
         System.out.println("   *");

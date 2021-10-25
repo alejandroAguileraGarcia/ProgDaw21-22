@@ -31,10 +31,10 @@ public class Ejercicio35X {
 
         if (i < (altura / 2)) {
           espaciosDelanteros++;
-          espacios = espacios-2;
+          espacios -= 2;
         }else{
           espaciosDelanteros--;
-          espacios = espacios+2;
+          espacios += 2;
         }
         
       }

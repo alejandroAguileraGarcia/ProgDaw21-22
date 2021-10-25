@@ -37,7 +37,7 @@ public class Ejercicio20PiramideHueca {
       System.out.println();
 
       numeroEspacios--;
-      numeroEspaciosInteriores = numeroEspaciosInteriores + 2;
+      numeroEspaciosInteriores += 2;
     }
 
     /*Base piramide*/
