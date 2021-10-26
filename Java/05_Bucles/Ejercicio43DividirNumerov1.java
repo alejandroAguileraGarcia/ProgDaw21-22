@@ -1,7 +1,6 @@
-/*
 import java.util.Scanner;
 
-public class Ejercicio43DividirNumero {
+public class Ejercicio43DividirNumerov1 {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
 
@@ -29,37 +28,6 @@ public class Ejercicio43DividirNumero {
     }
 
     System.out.printf("Los numeros partidos son %d y %d", numero, reves);
-
-  }
-
-}
-*/
-
-import java.util.Scanner;
-
-public class Ejercicio43DividirNumero {
-  public static void main(String[] args) {
-    Scanner s = new Scanner(System.in);
-
-    int posicion;
-    long numero;
-    long numeroIntroducido;
-    long numero1 = 0;
-    long numero2 = 0;
-
-    System.out.print("Introduce un numero entero positivo de dos digitos como minimo: ");
-    numeroIntroducido = s.nextLong();
-
-    System.out.print("Introduce la posicion a partir de la cual quiere partir el numero: ");
-    posicion = s.nextInt();
-
-    s.close();
-
-
-
-    numero1 = numero / Math.pow(10, posicion);
-
-    System.out.printf("Los numeros partidos son %d y %d", numero1, numero2);
 
   }
 

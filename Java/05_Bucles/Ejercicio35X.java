@@ -4,8 +4,8 @@ public class Ejercicio35X {
   public static void main(String[] args){
     Scanner s = new Scanner(System.in);
 
-    int altura = 0;
-    int espacios = 0;
+    int altura;
+    int espacios;
     int espaciosDelanteros = 0;
 
     System.out.println("Introduce la altura de la X: ");

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ejercicio44IntroducirNumero {
+public class Ejercicio44IntroducirNumerov1 {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     
