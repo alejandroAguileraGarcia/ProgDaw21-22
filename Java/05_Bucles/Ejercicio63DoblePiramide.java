@@ -11,11 +11,10 @@ public class Ejercicio63DoblePiramide {
     int asteriscos1 = 0;
 
     int altura2;
-    int asteriscos2 = 1;
+    int asteriscos2 = 0;
 
     int espaciosDelanteros;
     int espaciosMedio;
-    int espaciosPrimero;
 
     System.out.print("Introduce la altura de la primera piramide: ");
     altura1 = s.nextInt();
@@ -36,6 +35,10 @@ public class Ejercicio63DoblePiramide {
     espaciosDelanteros = alturaMayor - 1;
     espaciosMedio = (altura1 - 1) * 2 + 1 + altura2;
 
+    if (altura2 > altura1){
+      System.out.print(".");
+    }
+
     for (int i = 1; i <= alturaMayor; i++){
 
       for (int j = 1; j <= espaciosDelanteros; j++){
@@ -44,15 +47,17 @@ public class Ejercicio63DoblePiramide {
 
       } //For espacios delanteros
 
-      if (i == (alturaMayor - alturaMenor)){
-
+      if (i > (altura2 - altura1)||(altura1 > altura2)){
         
-      
-      }
+        if (altura2 > altura1){
 
-      if (i > (altura2 - altura1)){
+          asteriscos1 = 1 + (i - altura2 + altura1 - 1) * 2;
 
-        asteriscos1 = 1 + (i - altura2 + altura1 - 1) * 2;
+        }else{
+
+          asteriscos1 = (i-1) * 2 + 1;
+
+        }
 
         for ( int j = 1; j <= asteriscos1; j++){
 
@@ -63,22 +68,48 @@ public class Ejercicio63DoblePiramide {
 
       }//If
 
-      for (int j = 1; j <= (espaciosMedio - espaciosDelanteros - asteriscos1 - asteriscos2 + 1); j++){
+      if (altura2 > altura1){
 
-        System.out.print(".");
+        for (int j = 1; j <= (espaciosMedio - espaciosDelanteros - asteriscos1 - asteriscos2 - 1); j++){
+
+          System.out.print(".");
+  
+        }
+
+      }else{
+
+        for (int j = 1; j <= ((alturaMayor - i) * 2 + 1); j++){
+
+          System.out.print(".");
+  
+        }
 
       }
 
-      for (int j = 1; j <= asteriscos2; j++){
+      if (i > (altura1 - altura2)||(altura2 > altura1)){
+        
+        if (altura1 > altura2){
 
-        System.out.print("*");
+          asteriscos2 = 1 + (i - altura1 + altura2 - 1) * 2;
 
-      }
+        }else{
+
+          asteriscos2 = (i-1) * 2 + 1;
+
+        }
+
+        for ( int j = 1; j <= asteriscos2; j++){
+
+          System.out.print("*");
+
+        }//For asteriscos segunda piramide
+
+
+      }//If
 
       System.out.println();
 
       espaciosDelanteros--;
-      asteriscos2 += 2;
       
       espaciosMedio++; 
     }//For altura total
