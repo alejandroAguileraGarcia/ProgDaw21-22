@@ -1,6 +1,8 @@
 {
   "java.project.sourcePaths": [
     "Java/05_Bucles",
-    "Java/04_Condicionales"
+    "Java/04_Condicionales",
+    "Java/00_ExamenesPasados/Control01_19_20",
+    "Java/00_ExamenesPasados/EjerciciosCortosBucles"
   ]
 }
