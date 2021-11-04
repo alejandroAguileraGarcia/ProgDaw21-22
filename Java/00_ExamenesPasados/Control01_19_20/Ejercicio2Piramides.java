@@ -72,9 +72,15 @@ public class Ejercicio2Piramides {
 
       for(int k = 1; k <= caracter; k++){
         
-        if (k % 2 == 0){
+        if (k % 2 == 0 && !orientacion.equals("derecha")){
           System.out.print(caracter2);
-        }else{
+        }else if (k % 2 != 0 && !orientacion.equals("derecha")){
+          System.out.print(caracter1);
+        }
+
+        if ((k+i) % 2 == 0 && orientacion.equals("derecha")){
+          System.out.print(caracter2);
+        }else if ((k+i) % 2 != 0 && orientacion.equals("derecha")){
           System.out.print(caracter1);
         }
 

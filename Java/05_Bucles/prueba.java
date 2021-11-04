@@ -8,3 +8,5 @@ public class prueba {
 
 // Valor ascii: int asciiCode = 'b';
 // Limpiar pantalla: \033[H\033[2J
+// Leer char char c = s.next().charAt(0);
+// Valor absoluto int valor_absoluto_de_a = Math.abs(a);
