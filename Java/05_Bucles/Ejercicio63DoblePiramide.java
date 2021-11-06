@@ -5,7 +5,6 @@ public class Ejercicio63DoblePiramide {
     Scanner s = new Scanner(System.in);
 
     int alturaMayor;
-    int alturaMenor;
 
     int altura1;
     int asteriscos1 = 0;
@@ -26,10 +25,8 @@ public class Ejercicio63DoblePiramide {
 
     if (altura1 > altura2) {
       alturaMayor = altura1;
-      alturaMenor = altura2;
     }else{
       alturaMayor = altura2;
-      alturaMenor = altura1;
     }
 
     espaciosDelanteros = alturaMayor - 1;
