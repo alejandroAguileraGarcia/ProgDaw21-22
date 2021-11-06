@@ -4,50 +4,43 @@ public class Ejercicio2PareseImpares {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     
-    long numeroIntroducido;
     long numero;
+    long reves = 0;
 
-    int numeroImpares;
-    int numeroPares;
-    int digito;
+    long numeroImpares = 0;
+    long numeroPares = 0;
 
-    boolean par = false;
+    long digito;
 
     System.out.print("Introduce un numero largo positivo: ");
-    numeroIntroducido = s.nextLong();
+    numero = s.nextLong();
 
     s.close();
 
-    numero = numeroIntroducido;
-
     while (numero > 0){
+
       digito = numero % 10;
       numero /= 10;
 
-    }
-
-    for (int i = 0; i < 10; i++) {
-      numero = numeroIntroducido;
-
-      while (numero > 0){
-        digito = numero % 10;
-        numero /= 10;
-
-        if (digito == i){
-          numerosAparecen = numerosAparecen + " " + Integer.toString(i);
-          impreso = true;
-        }
-
-
-      }//while
-
-      if (impreso ==false){
-        numerosNoAparecen = numerosNoAparecen + " " + Integer.toString(i);
+      if (digito % 2 != 0){
+        numeroImpares = numeroImpares * 10 + digito;
+      }else {
+        reves = reves * 10 + digito;
       }
 
-      impreso = false;
+    }//While
 
-    }//for
+    while (reves > 0){
+
+      digito = reves % 10;
+      reves /= 10;
+
+      numeroPares = numeroPares * 10 + digito;
+
+    }
+
+    System.out.println(numeroImpares);
+    System.out.println(numeroPares);
 
   }
 }
