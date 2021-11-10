@@ -7,7 +7,7 @@ public class Ejercicio01Tirada3Dados {
     
     for (int i = 1; i <= 3; i++){
       
-      numeroAleatorio = (int) (Math.random() * 3 + 1);
+      numeroAleatorio = (int) (Math.random() * 6 + 1);
       suma += numeroAleatorio;
       System.out.printf("El dado %d es: %d\n", i, numeroAleatorio);
 
