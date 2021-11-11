@@ -15,6 +15,8 @@ public class Ejercicio31Apuesta {
     System.out.print("Introduce la cantidad de dinero que quieres apostar: ");
     cantidad = s.nextInt();
 
+    s.close();
+
     do {
 
       Dado1 = (int) (Math.random() * 6) + 1;
