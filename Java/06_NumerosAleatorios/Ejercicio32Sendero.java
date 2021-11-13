@@ -34,7 +34,7 @@ public class Ejercicio32Sendero {
 
       for (int j = 0; j < espacios; j++) System.out.print(" ");
 
-      for (int j = 0; j < 6; j++) System.out.print((j == 0 || j == 5) ? "|" : (j == aleatorio) ? obstaculo : " ");
+      for (int j = 0; j < 6; j++) System.out.print(j == 0 || j == 5 ? "|" : (j == aleatorio) ? obstaculo : " ");
 
       System.out.println();
 
