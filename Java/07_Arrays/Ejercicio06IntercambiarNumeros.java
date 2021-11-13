@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ejercicio6IntercambiarNumeros {
+public class Ejercicio06IntercambiarNumeros {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
 

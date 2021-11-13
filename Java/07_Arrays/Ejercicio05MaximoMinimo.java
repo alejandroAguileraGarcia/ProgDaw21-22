@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ejercicio5MaximoMinimo {
+public class Ejercicio05MaximoMinimo {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
 
