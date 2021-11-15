@@ -4,12 +4,12 @@ public class Ejercicio14Colores {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
 
-    String palabras[] = new String[8];
+    String [] palabras = new String[8];
 
-    String colores[] = new String[8];
+    String [] colores = new String[8];
     int cantColores = 0;
 
-    String resto[] = new String[8];
+    String [] resto = new String[8];
     int cantResto = 0;
     
     String coloresAlmacenados[] = {"verde", "rojo", "azul", "amarillo", "naranja", "rosa", "negro", "blanco", "morado"};
