@@ -1,4 +1,3 @@
-package UNIDIMENSIONALES;
 public class Ejercicio18ArrayAlterno {
   public static void main(String[] args) {
     

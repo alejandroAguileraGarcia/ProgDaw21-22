@@ -1,4 +1,3 @@
-package UNIDIMENSIONALES;
 public class Ejercicio21MultiplosCinco {
   public static void main(String[] args) {
     

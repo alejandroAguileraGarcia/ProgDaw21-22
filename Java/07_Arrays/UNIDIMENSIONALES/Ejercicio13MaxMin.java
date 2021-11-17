@@ -1,4 +1,3 @@
-package UNIDIMENSIONALES;
 import java.util.Scanner;
 
 public class Ejercicio13MaxMin {
