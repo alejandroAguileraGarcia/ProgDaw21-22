@@ -1,3 +1,4 @@
+package UNIDIMENSIONALES;
 public class Ejercicio10ParImparUnArray {
   public static void main(String[] args) {
     
