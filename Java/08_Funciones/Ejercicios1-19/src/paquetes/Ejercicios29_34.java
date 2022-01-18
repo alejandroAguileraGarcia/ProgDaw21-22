@@ -56,4 +56,28 @@ public class Ejercicios29_34{
     
     return posicion;
   }
+
+  public static boolean esPuntoDeSilla (int[][] array, int n) {
+
+    int[] posicion = coordenadasEnArrayBiInt (array, n);
+
+    if (posicion[0] == -1 && posicion[1] == -1) return false;
+
+    for (int i = 0; i < array.length; i++) {
+      if (array [posicion[0]][i] > array [posicion[0]][posicion[1]]) return false;
+    }
+
+    for (int i = 0; i < array[0].length; i++) {
+      if (array [posicion[i]][1] < array [posicion[0]][posicion[1]]) return false;
+    }
+
+    return true;
+  }
+
+  public static int[] diagonal (int [][] array, int fila, int columna, String coordenadas) {
+    int [] posicion = {1, 2, 3};
+    return posicion;
+  }
 }
+
+/* Ejercicio 49 55 56*/
