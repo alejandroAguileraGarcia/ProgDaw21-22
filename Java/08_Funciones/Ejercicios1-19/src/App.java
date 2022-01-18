@@ -1,8 +1,11 @@
-import paquetes.Ejercicios01_14;
+import paquetes.Ejercicios20_28;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println(Ejercicios01_14.voltea(1234567));
+        
+        int [] [] inicial = {{1,3},{1,2},{1,3}};
+
+        System.out.println(inicial[0].length);
 
     }
 }
