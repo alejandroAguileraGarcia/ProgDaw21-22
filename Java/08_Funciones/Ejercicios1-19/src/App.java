@@ -3,9 +3,24 @@ import paquetes.Ejercicios20_28;
 public class App {
     public static void main(String[] args) throws Exception {
         
-        int [] [] inicial = {{1,3},{1,2},{1,3}};
+        System.out.print("Introduce un número entero positivo: ");
+        int n = Integer.parseInt(System.console().readLine());
 
-        System.out.println(inicial[0].length);
+        if (esPrimo(n)) {
+            System.out.println("El " + n + " es primo.");
+        } else {
+            System.out.println("El " + n + " no es primo.");
+        }
+    }
 
+    public static boolean esPrimo (int numero) {
+        boolean esPrimo = true;
+        for (int i = 2; i < numero; i++) {
+            if ((numero % i) == 0) {
+                esPrimo = false;
+            }   
+        }
+    
+        return esPrimo;
     }
 }

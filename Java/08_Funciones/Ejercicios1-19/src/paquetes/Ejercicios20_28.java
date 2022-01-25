@@ -16,7 +16,7 @@ public class Ejercicios20_28 {
     
     int min = Integer.MAX_VALUE;
     
-    for (int i = 0; i < arrayInt.length; i++) {
+    for (int i = 0; i < arrayInt.length ; i++) {
       if (arrayInt[i] < min) min = arrayInt[i];
     }
 
