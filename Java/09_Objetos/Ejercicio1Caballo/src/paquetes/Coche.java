@@ -2,11 +2,11 @@ package paquetes;
 
 public class Coche extends Vehiculo {
   
-  private int cilindrada;
+  private int cilindradaMotor;
   
-  public Coche (int cilindrada) {
+  public Coche (int cilindradaMotor) {
     super();
-    this.cilindrada = cilindrada;
+    this.cilindradaMotor = cilindradaMotor;
   }
 
   public void quemarRueda() {

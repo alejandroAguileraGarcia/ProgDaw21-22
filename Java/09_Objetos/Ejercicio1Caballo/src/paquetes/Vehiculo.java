@@ -8,7 +8,8 @@ public abstract class Vehiculo {
   private int kilometrajeIndividual;
 
   public Vehiculo () {
-    this.kilometrosTotales = 0;
+    vehiculosTotales++;
+    this.kilometrajeIndividual = 0;
   }
 
   public static int getKilometrosTotales() {

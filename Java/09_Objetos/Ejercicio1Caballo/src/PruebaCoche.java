@@ -26,7 +26,7 @@ public class PruebaCoche {
 
       switch (opcion) {
         case 1:
-          System.out.print("¿Cuántos kilómetros quiere recorrer? ");
+          System.out.print("¿Cuántos kilómetros ha recorrido? ");
           km = Integer.parseInt(System.console().readLine());
           hondaBicicleta.recorre(km);
           break;
@@ -34,7 +34,7 @@ public class PruebaCoche {
           hondaBicicleta.caballito();
           break;
         case 3:
-          System.out.print("¿Cuántos kilómetros quiere recorrer? ");
+          System.out.print("¿Cuántos kilómetros ha recorrido? ");
           km = Integer.parseInt(System.console().readLine());
           audiA4.recorre(km);
           break;
@@ -42,11 +42,11 @@ public class PruebaCoche {
           audiA4.quemarRueda();
           break;
         case 5:
-          System.out.println("La bicicleta lleva recorridos ");
+          System.out.println("La bicicleta ha recorrido: ");
           System.out.println(hondaBicicleta.getKilometrajeIndividual() + " Km");
           break;
         case 6:
-          System.out.println("El coche lleva recorridos ");
+          System.out.println("El coche ha recorrido: ");
           System.out.println(audiA4.getKilometrajeIndividual() + " Km");
           break;
         case 7:
