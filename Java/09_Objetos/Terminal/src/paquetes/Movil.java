@@ -23,9 +23,9 @@ public class Movil extends Terminal {
   public void llama(Terminal t, int tiempo) {
     super.llama(t, tiempo);
     
-    if (this.tarifa.equals("rata")) this.tarificados = this.tarificados + (tiempo * 0.06);
-    else if (this.tarifa.equals("mono")) this.tarificados = this.tarificados + (tiempo * 0.12);
-    else this.tarificados = this.tarificados + (tiempo * 0.30);
+    if (this.tarifa.equals("rata")) this.tarificados = this.tarificados + (tiempo * 0.001);
+    else if (this.tarifa.equals("mono")) this.tarificados = this.tarificados + (tiempo * 0.12 /60);
+    else this.tarificados = this.tarificados + (tiempo * 0.005);
   }
   
 }

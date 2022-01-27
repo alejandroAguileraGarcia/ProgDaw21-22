@@ -19,10 +19,11 @@ public class Ejercicio12 {
       numeroPalabras++;
 
     } while ((!palabraLeida.equals("salir"))&&(numeroPalabras != 4));
-
+    
+    s.close();
+    
     System.out.println(cadenaDePalabras);
 
-    s.close();
 
   }
 }
